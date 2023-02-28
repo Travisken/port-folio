@@ -1,0 +1,439 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background-image: url(Screenshot_20230227-143049.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* nav: gives the navigation bar color, width, and padding; */
+
+nav {
+    width: 100%;
+    height: fit-content;
+    padding: 0px 70px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .4s;
+    box-shadow: 0px 0px 80px 100px rgba(0, 0, 0, 0.696);
+}
+
+nav:hover {
+    box-shadow: 0px 0px 100px 100px rgba(0, 0, 0, 0.818);
+}
+
+.logo {
+    background-image: url(Screenshot_20230227-154356.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 55px;
+    width: 55px;
+    border-radius: 100%;
+    margin-top: 10px;
+
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.name {
+    color: white;
+    font-weight: 500;
+    margin-top: 15px;
+    font-size: 20px;
+    transition: .4s;
+
+}
+
+.name:hover {
+    color: purple;
+    font-weight: 700;
+}
+
+/* nav ul: gives a gap between the ul items; */
+
+nav ul {
+    display: flex;
+    gap: 50px;
+}
+
+/* nav ul:  */
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: .4s;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+
+nav ul li a:hover {
+    font-weight: bolder;
+}
+
+.underline {
+    height: 23px;
+    width: fit-content;
+    transition: .4s;
+    background: none;
+}
+
+.underline:hover {
+    border-bottom: 2px solid white;
+}
+
+.main {
+    display: flex;
+    padding: 100px 0px 0px 50px;
+}
+
+.backdrop {
+    background-image: linear-gradient(white, rgb(186, 202, 246), rgb(95, 95, 248), rgba(0, 0, 255, 0.685));
+    height: 350px;
+    border-radius: 100%;
+    transform: rotate(-30deg);
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-left: 885px;
+    transition: .4s;
+    box-shadow: 0px 0px 15px 5px rgba(88, 88, 231, 0.411);
+
+}
+
+.backdrop:hover {
+    background: none;
+    border: 6px solid purple;
+    border-style: dashed;
+    transform: rotate(360deg);
+    box-shadow: 0px 0px 50px 10px rgba(167, 29, 167, 0.411);
+
+}
+
+.profile {
+    background-image: url(Screenshot_20230227-144641.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    background-color: black;
+    border-radius: 100%;
+    transition: .100s;
+    position: relative;
+    margin-top: 26px;
+    margin-left: 120px;
+}
+
+
+
+.text {
+    font-size: 80px;
+    font-weight: 700;
+    color: purple;
+}
+
+.white {
+    color: white;
+
+}
+
+.footer{
+    width: 100%;
+    height: 100px;
+margin-top: -5px;
+transition: .4s;
+}
+
+.footer:hover{
+    /* height: 50px; */
+    background-color: rgba(0, 0, 0, 0.829);
+    box-shadow: 0px 0px 100px 100px rgba(0, 0, 0, 0.842);
+}
+
+.buttons{
+    display: flex;
+    gap: 50px;
+    margin-left: 50px;
+    margin-top: -100px;
+}
+
+button{
+    height: 30px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 25px;
+    color: white;
+    font-weight: 1000;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    background-image: linear-gradient( to bottom right,black,rgb(65, 63, 63),black);
+}
+
+.btn1{
+    height: 50px;
+    padding: 15px 10px;
+    border-radius: 10px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .10s;
+    background-image: linear-gradient(to bottom right,white,rgb(212, 65, 212),purple,purple);
+}
+
+.btn1:hover{
+    background-image: linear-gradient(to bottom left,white,rgb(212, 65, 212),purple,purple);
+    box-shadow: 0px 0px 20px 2px rgba(62, 62, 141, 0.375);
+    
+}
+
+@media screen and (max-width: 1000px) {
+
+
+    nav {
+        width: 100%;
+        height: fit-content;
+        padding: 0px 100px 0px 70px;
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0px 0px 80px 100px rgba(0, 0, 0, 0.696);
+    }
+    
+    nav:hover {
+        box-shadow: 0px 0px 100px 100px rgba(0, 0, 0, 0.797);
+    }
+    
+    .logo {
+        background-image: url(Screenshot_20230227-154356.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 55px;
+        width: 55px;
+        border-radius: 100%;
+        margin-top: 10px;
+    
+    }
+    
+    .title {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .name {
+        color: white;
+        font-weight: 500;
+        margin-top: 15px;
+        font-size: 20px;
+        transition: .4s;
+    
+    }
+    
+   
+    
+    /* nav ul: gives a gap between the ul items; */
+    
+    nav ul {
+        display: flex;
+        gap: 50px;
+    }
+    
+    /* nav ul:  */
+    
+    nav ul li {
+        list-style: none;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        transition: .4s;
+        font-family: 'Inter', sans-serif;
+        font-family: 'Quicksand', sans-serif;
+    }
+    
+    nav ul li a:hover {
+        font-weight: bolder;
+    }
+    
+    .underline {
+        height: 23px;
+        width: fit-content;
+        transition: .4s;
+        background: none;
+    }
+    
+    .underline:hover {
+        border-bottom: 2px solid white;
+    }
+    
+   
+    
+    .backdrop {
+        height: 150px;
+        border-radius: 100%;
+        width: 150px;
+        margin-left: 580px;
+    
+    }
+    
+    .backdrop:hover {
+        background: none;
+        border: 6px solid purple;
+        border-style: dashed;
+        transform: rotate(360deg);
+        box-shadow: 0px 0px 50px 10px rgba(167, 29, 167, 0.411);
+    
+    }
+    
+    .profile {
+      
+        height: 120px;
+        width: 120px;
+        background-color: black;
+       
+        margin-top: 15px;
+        margin-left: 100px;
+    }
+    
+    
+    
+    .text {
+        font-size: 50px;
+        font-weight: 700;
+        color: purple;
+    }
+    
+  
+    
+    .white {
+        color: white;
+    
+    }
+    
+    .footer{
+        width: 100%;
+        height: 100px;
+    margin-top: 400px;
+    }
+    
+    .footer:hover{
+        background-color: rgba(0, 0, 0, 0.829);
+        box-shadow: 0px 0px 100px 100px rgba(0, 0, 0, 0.842);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .backdrop {
+        height: 100px;
+        border-radius: 100%;
+        width: 100px;
+        margin-left: 0px;
+        margin-top: -25px;
+    
+    }
+
+    .backdrop:hover {
+        
+        border: 2px solid purple;
+        border-style: dashed;
+        transform: rotate(360deg);
+        box-shadow: 0px 0px 50px 10px rgba(167, 29, 167, 0.411);
+    
+    }
+
+    .text {
+        font-size: 22px;
+        font-weight: 700;
+        color: purple;
+    }
+
+    .profile {
+        background-image: url(Screenshot_20230227-144641.png);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 90px;
+        width: 90px;
+        background-color: black;
+        border-radius: 100%;
+        transition: .100s;
+        position: relative;
+        margin-top: -20px;
+        margin-left: -213.5px;
+    }
+
+    nav {
+       
+        padding: 0px 30px;
+        
+        
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+
+    .name{
+        font-size: 12px;
+        margin: 0px;
+    }
+
+    .text{
+        margin-top: 100px;
+    }
+
+    button{
+        height: 30px;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 25px;
+        color: white;
+        font-weight: 1000;
+        border: none;
+        border-radius: 7px;
+        cursor: pointer;
+        background-image: linear-gradient( to bottom right,black,rgb(65, 63, 63),black);
+    }
+    
+    .btn1{
+        height: 50px;
+        padding: 15px 10px;
+        border-radius: 10px;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .10s;
+        background-image: linear-gradient(to bottom right,white,rgb(212, 65, 212),purple,purple);
+    }
+}
+
